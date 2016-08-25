@@ -29,6 +29,6 @@ class Category extends Model
     */
     public function post()
     {
-      return $this->hasMany('App\Models\Post', 'category_id');
+        return $this->hasMany('App\Models\Post', 'category_id');
     }
 }

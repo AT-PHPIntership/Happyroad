@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-      protected $table = 'posts';
+    protected $table = 'posts';
 
       /**
       * The attributes that are mass assignable.
@@ -14,7 +14,7 @@ class Post extends Model
       * @var array
       */
 
-      protected $fillable = array(
+    protected $fillable = array(
         'id',
         'category_id',
         'user_id',

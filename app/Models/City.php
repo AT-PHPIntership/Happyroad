@@ -28,7 +28,7 @@ class City extends Model
     */
     public function post()
     {
-      return $this->hasMany('App\Models\Post', 'city_id');
+        return $this->hasMany('App\Models\Post', 'city_id');
     }
 
     /**
@@ -38,6 +38,6 @@ class City extends Model
     */
     public function user()
     {
-      return $this->hasMany('App\Models\User', 'city_id');
+        return $this->hasMany('App\Models\User', 'city_id');
     }
 }

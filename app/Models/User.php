@@ -52,7 +52,7 @@ class User extends Authenticatable
     */
     public function post()
     {
-      return $this-> hasMany('App\Models\Post', 'user_id');
+        return $this-> hasMany('App\Models\Post', 'user_id');
     }
 
     /**
@@ -60,8 +60,8 @@ class User extends Authenticatable
      *
      * @return Illuminate\Database\Eloquent\Relations\HasMany
      */
-     public function comment()
-     {
-       return $this-> hasMany('App\Models\Comment', 'user_id');
-     }
+    public function comment()
+    {
+        return $this-> hasMany('App\Models\Comment', 'user_id');
+    }
 }
