@@ -20,17 +20,17 @@ class PostsTableSeeder extends Seeder
             $nbWords = rand(5, 10);
             $maxNbChars = rand(200, 1500);
             $title = $faker->words($nbWords, $asText = true);
-            $post = new Post();
-            $post->user_id = rand(1, 101);
-            $post->category_id = rand(1, 15);
-            $post->city_id = rand(1, 50);
-            $post->address_from_to = $faker->address
-            $post->rating = rand(1, 100 );
-            $post->title = $title;
-            $post->content = $faker->text($maxNbChars);
-            $post->cost = rand(5000, 200000);
-            $post->date = $faker->date('d-m-Y');
-            $post->save();
+            Post::create([
+              'user_id' => rand(1, 101),
+              'category_id' => rand(1, 15),
+              'city_id' => rand(1, 50),
+              'address_from_to' => $faker->address,
+              'rating' => rand(1,100),
+              'title' => $title,
+              'content' => $faker ->text($maxNbChars),
+              'cost' => rand(5000, 200000),
+              'time' =>  $faker->date('d-m-Y'),
+            ]);
         }
     }
 }

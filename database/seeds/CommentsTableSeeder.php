@@ -21,7 +21,6 @@ class CommentsTableSeeder extends Seeder
                 'post_id'   	  => rand(1,20),
                 'created_at' => $faker->dateTimeThisYear($max = 'now')
               ]);
-            }
         }
     }
 }

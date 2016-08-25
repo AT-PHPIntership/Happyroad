@@ -17,7 +17,7 @@ class CitiesTableSeeder extends Seeder
 
           for ($i=0; $i < 50; $i++) {
              $city = City::create([
-                'name' => $faker->city,
+                'name' => $faker->unique()->word,
                 'created_at' => $faker->dateTimeThisYear($max = 'now')
             ]);
         }

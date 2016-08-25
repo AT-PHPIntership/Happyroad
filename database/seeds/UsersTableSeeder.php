@@ -32,8 +32,8 @@ class UsersTableSeeder extends Seeder
                   'password' => bcrypt('12345678'),
                   'birthday' => $faker->dateTimeBetween('-40 years', '-18 years')->format('d/m/Y'),
                   'gender' => rand(0,1),
-                  'phone_number' => $faker->phoneNumber;
-                  'city_id' => rand(0,100),
+                  'phone_number' => $faker->phoneNumber,
+                  'city_id' => rand(1, 50),
                   'remember_token' => str_random(60),
                   'created_at' => $faker->dateTimeThisYear($max = 'now')
               ]);
