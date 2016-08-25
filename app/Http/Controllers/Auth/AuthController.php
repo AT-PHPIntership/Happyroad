@@ -43,7 +43,6 @@ class AuthController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
      * @param array $data request data to validate
      *
      * @return \Illuminate\Contracts\Validation\Validator
@@ -60,7 +59,6 @@ class AuthController extends Controller
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
      * @param array $data the data to create user
      *
      * @return User

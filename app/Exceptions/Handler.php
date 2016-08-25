@@ -28,7 +28,6 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param  \Exception  $e
      * @param \Exception $e the exception to be reported
      *
      * @return void
@@ -41,8 +40,6 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception into an HTTP response.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $e
      * @param \Illuminate\Http\Request $request the application request
      * @param \Exception               $e       the exception to be rendered
      *
